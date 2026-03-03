@@ -1,0 +1,118 @@
+{
+  "projectType": "saas",
+  "projectName": "ComplianceAI",
+  "projectDescription": "AI-powered audit and compliance management platform for banking institutions, automating KYC and AML compliance checks with Azure OpenAI.",
+  "theme": "linden",
+  "primaryColor": "#1e40af",
+  "lightColor": "#3b82f6",
+  "darkColor": "#1e3a8a",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/rbi-guidelines",
+              "features/account-management",
+              "features/audit-reports",
+              "features/compliance-checks"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "guides/creating-accounts",
+              "guides/updating-guidelines",
+              "guides/generating-reports",
+              "guides/dashboard-overview"
+            ]
+          },
+          {
+            "group": "Azure Integration",
+            "pages": [
+              "azure/overview",
+              "azure/openai-setup",
+              "azure/vector-stores",
+              "azure/assistants-api"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/overview",
+              "api/bank-accounts",
+              "api/guidelines",
+              "api/compliance"
+            ]
+          },
+          {
+            "group": "Models",
+            "pages": [
+              "api/models/bank-account",
+              "api/models/compliances"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "development/architecture",
+              "development/backend",
+              "development/frontend"
+            ]
+          },
+          {
+            "group": "Contributing",
+            "pages": [
+              "development/setup",
+              "development/contributing"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Automated RBI compliance monitoring and updates",
+    "AI-powered audit report generation with minimal human intervention",
+    "Multi-account type support (Savings, Current, Salary, Fixed Deposit, Recurring Deposit, NRI)",
+    "KYC and AML compliance checking with suspicious activity detection",
+    "Secure vector store architecture for privacy and data security",
+    "Real-time compliance insights and analytics dashboard",
+    "Azure OpenAI integration for intelligent document analysis",
+    "Scalable cloud-native architecture"
+  ],
+  "publicApiSurface": [
+    "GET /AML_guidelines/ - Retrieve AML compliance guidelines",
+    "POST /AML_guidelines/ - Update AML compliance guidelines",
+    "GET /KYC_guidelines/ - Retrieve KYC compliance guidelines",
+    "POST /KYC_guidelines/ - Update KYC compliance guidelines",
+    "GET /bank_accounts/ - List all bank accounts",
+    "POST /bank_accounts/ - Create a new bank account",
+    "GET /bank_accounts/<adhaar_number>/<account_type>/ - Get specific account details",
+    "PUT /bank_accounts/<adhaar_number>/<account_type>/ - Update account details",
+    "DELETE /bank_accounts/<adhaar_number>/<account_type>/ - Delete account",
+    "complianceAssitant.main() - Generate compliance audit reports",
+    "userBankAccountInsightsGenerator.main() - Generate account insights",
+    "RBI_DataFetcher - Fetch and process RBI guidelines"
+  ]
+}
